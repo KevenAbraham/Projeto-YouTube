@@ -8,22 +8,20 @@
     font-family: sans-serif;
 }
 
-/* width */
-::-webkit-scrollbar {
+/* customizando a barra de rolagem da página */
+ ::-webkit-scrollbar {
     width: 8px;
-  }
+ }
   
-  /* Track */
-  ::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     border-radius: 10px;
     background: transparent;
   }
   
-  /* Handle */
   ::-webkit-scrollbar-thumb {
     background: rgb(163, 161, 161);
     border-radius: 10px;
-  }
+  } 
 
 
 /*header da página*/
