@@ -1,0 +1,532 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* { 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: transparent;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(163, 161, 161);
+    border-radius: 10px;
+  }
+
+
+/*header da página*/
+header { 
+    position: fixed;
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: 56px;
+    z-index: 10;
+    background-color: #fff;
+}
+
+/* area do logo */
+#esquerdo {
+    display: flex;
+    width: 20%;
+    height: 100%;
+    align-items: center;
+}
+
+/* estilizando o menu hamburguer */
+#esquerdo .hamburguer {
+    margin: 0px 25px; 
+    color: black;
+    font-size: 22px;
+    padding: 8px 13px;
+    border-radius: 50px;
+}
+
+#esquerdo .hamburguer:hover {
+    background-color: #f1f1f1;
+}
+
+/* informa que está selecionado o segundo elemento a */
+#esquerdo a:nth-child(2) {
+    width: 90px;
+}
+
+#esquerdo img {
+    width: 90px;
+    height: 20px;
+}
+
+#esquerdo p {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 10px;
+    bottom: 25%;
+    padding-left: 5px;
+}
+
+/* area de pesquisa */
+#meio {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#meio #box {
+    width: 70%;
+    height: 80%;
+    border-radius: 50px;
+    background-color: #f1f1f1;
+    margin-left: 9%;
+}
+
+#meio #box:hover {
+    background-color: #ccc;
+}
+
+#meio #box input {
+    width: 90%;
+    height: 100%;
+    padding-left: 20px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 50px 0 0 50px;
+}
+
+#meio #box i {
+    margin-left: 2%;
+}
+
+#meio a {
+    margin-left: 5px;
+    font-size: 20px;
+    padding: 8px 13px;
+    border-radius: 60px;
+    color: #000;
+}
+
+#meio a:hover {
+    background-color: #f1f1f1;
+}
+
+/* area do usuario */
+#direito {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 100%;
+}
+
+#direito a {
+    color: #000;
+    padding: 5px 10px;
+    font-size: 22px;
+    border-radius: 50px;
+}
+
+#direito a:hover {
+    background-color: #f1f1f1;
+}
+
+/* seleciona o segundo elemento a da ID direito */
+#direito a:nth-child(2) {
+    margin: 0 30px;
+}
+
+#direito .img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    background: url(imagens/profile-picture.jpeg);
+    background-size: cover;
+}
+
+/* area de navegacao lateral*/
+#nav-left {
+    position: fixed;
+    background-color: #fff;
+    top: 56px;
+    height: 92vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 20%;
+    padding-top: 15px;
+    align-items: center;
+}
+
+nav .navBox {  
+    border-radius: 10px;
+    width: 90%;
+    height: auto;
+    padding: 10px;
+    margin: auto;
+    font-size: 18px;
+}
+
+nav .navBox:hover {
+    background-color: #f1f1f1;
+}
+
+nav .navBox a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+}
+
+nav .active {
+    background-color: #f1f1f1;
+}
+
+nav .active:hover {
+    background-color: #ccc;
+}
+
+nav .navBox i {
+    width: 25%;
+    text-align: center;
+}
+
+nav #linha {
+    width: 90%;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px auto;
+}
+
+nav .texto {
+    width: 90%;
+    padding-left: 10px;
+    margin: 0 auto 10px auto;
+}
+
+nav .texto h3 {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+nav .navBox .width {
+    width: 25%;
+}
+
+nav .navBox .fotoCanal {
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    margin: auto;
+}
+
+.proa {
+    background: url(imagens/canalProa.png);
+    background-size: cover;
+}
+
+.casimiro {
+    background: url(imagens/canalCasimito.jpg);
+    background-size: cover;
+}
+
+nav .navBox .alanzoka {
+    background: url(imagens/canalAlanzoka.jpg);
+    background-size: cover;
+}
+
+.thewknd {
+    background: url(imagens/canalTWD.jpg);
+    background-size: cover;
+}
+
+nav .navBox .premium {
+    background: url(imagens/youtubePremium.png);
+    background-size: cover;
+}
+
+nav .navBox .studio {
+    background: url(imagens/youtubeStudio.png);
+    background-size: cover;
+}
+
+nav .navBox .music {
+    background: url(imagens/youtubeMusic.png);
+    background-size: cover;
+}
+
+nav .navBox .kids {
+    background: url(imagens/youtubeKids.png);
+    background-size: cover;
+}
+
+nav .outros {
+    width: 90%;
+    margin-left: 20px;
+}
+
+nav .outros a {
+    text-decoration: none;
+    color: gray;
+    font-size: 14px;
+}
+
+nav .copy {
+    color: rgb(165, 165, 165);
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+#nav-top {
+    position: fixed;
+    background-color: #fff;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    top: 56px;
+    left: 20%;
+    z-index: 100;
+    padding: 10px 0;
+}
+
+#nav-top .linkNav {
+    position: sticky;
+    padding: 8px 10px;
+    text-decoration: none;
+    color: black;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+}
+
+#nav-top .linkNav:hover {
+    background-color: #ccc;
+}
+
+#nav-top .ativado {
+    background-color: #000;
+    color: #fff;
+}
+/* atribuindo cor preta para o fundo do primeiro elemento */
+
+#nav-top .ativado:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* começando a configurar a main */
+main {
+    position: relative;
+    top: 56px;
+    width: 80%;
+    margin-left: 20%;
+    height: 500px;
+}
+
+main section {
+    margin-top: 65px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+main section a {
+    width: 22.5%;
+    margin: 5px 12px;
+    text-decoration: none;
+}
+
+main section .videoBox .fotoVideo {
+    width: 100%;
+    height: 125px;
+    border-radius: 10px;
+}
+
+main section .videoBox .content {
+    display: flex;
+    margin-top: 10px;
+}
+
+main section .videoBox .content .fotoCanalVideo {
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    margin-right: 15px;
+}
+
+main section .videoBox .content h1 {
+    color: #000;
+    width: 70%;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Roboto';
+}
+
+main section .videoBox .videoDesc {
+    position: relative;
+    left: 35px;
+    width: 70%;
+    margin: 10px;
+    font-size: 13px;
+    color: #777777;
+}
+
+/* ESPN */
+.espnThumb {
+    background: url(imagens/thumbnail.jpg);
+    background-size: cover;
+}
+
+.espn {
+    background: url("imagens/espn.jpg");
+    background-size: cover;
+}
+
+/* Real Madrid */
+.espnRealMadrid {
+    background: url(imagens/real-madrid.png);
+    background-size: cover;
+}
+
+/* proa */
+.estagio {
+    background: url(imagens/estagio.jpg);
+    background-size: cover;
+}
+
+/* tutorial de html e css */
+.toggle {
+    background: url(imagens/unix.jpg);
+    background-size: cover;
+}
+
+.makeTechStuff {
+    background: url(imagens/make.jpg);
+    background-size: cover;
+}
+
+/* braking bad */
+.brakingBad {
+    background: url(imagens/braking-bad.jpg);
+    background-size: cover;
+}
+
+.wave {
+    background: url(imagens/wave.jpg);
+    background-size: cover;
+}
+
+/* neymar */
+.neymar {
+    background: url(imagens/neymar.jpg);
+    background-size: cover;
+}
+
+.lima {
+    background: url(imagens/lima.jpg);
+    background-size: cover;
+}
+
+/* enem */
+.enem {
+    background: url(imagens/enem.jpg);
+    background-size: cover;
+}
+
+.matematica {
+    background: url(imagens/matematica.jpg);
+    background-size: cover;
+}
+
+/* the weeknd */
+.nwy {
+    background: url(imagens/nwy.jpg);
+    background-size: cover;
+}
+
+/* github */
+.github {
+    background: url(imagens/github.jpg);
+    background-size: cover;
+}
+
+.iniciativa {
+    background: url(imagens/iniciativa.jpg);
+    background-size: cover;
+}
+
+/* virus  */
+.virus {
+    background: url(imagens/virus.jpg);
+    background-size: cover;
+}
+
+.milkurtz {
+    background: url(imagens/milkurtz.jpg);
+    background-size: cover;
+}
+
+/* phonk */
+.phonk {
+    background: url(imagens/phonk.jpg);
+    background-size: cover;
+}
+
+.piped {
+    background: url(imagens/piped.jpg);
+    background-size: cover;
+}
+
+/* alanzoka */
+.alanzokaVideo {
+    background: url(imagens/alanzoka.jpg);
+    background-size: cover;
+}
+
+.canalAlanzoka {
+    background: url(imagens/canalAlanzoka.jpg);
+    background-size: cover;
+}
+
+/* ludovaijante */
+.ludo {
+    background: url(imagens/ludo.jpg);
+    background-size: cover;
+}
+
+.ludoviajante {
+    background: url(imagens/ludoviajante.jpg);
+    background-size: cover;
+}
+
+/* the weeknd */
+.save {
+    background: url(imagens/save.jpg);
+    background-size: cover;
+}
+
+/* sleep test  */
+.sleep {
+    background: url(imagens/sleep.jpg);
+    background-size: cover;
+}
+
+.seconds {
+    background: url(imagens/seconds.jpg);
+    background-size: cover;
+}
+
+/* casimiro */
+.casimiroThumb {
+    background: url(imagens/casimiroThumb.jpg);
+    background-size: cover;
+}
